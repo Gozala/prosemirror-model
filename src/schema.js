@@ -1,4 +1,4 @@
-import OrderedMap from "orderedmap.js"
+import OrderedMap from "../../orderedmap/index.js"
 
 import {Node, TextNode} from "./node.js"
 import {Fragment} from "./fragment.js"
