@@ -277,19 +277,19 @@ export type SchemaSpec = {
 }
 
 export type NodeSpec = $Subtype<{
-  content?: string,
-  marks?: string,
-  group?: string,
-  inline?: boolean,
-  atom?: boolean,
+  +content?: string,
+  +marks?: string,
+  +group?: string,
+  +inline?: boolean,
+  +atom?: ?boolean,
   +attrs?: Object,
-  selectable?: boolean,
-  draggable?: boolean,
-  code?: boolean,
-  defining?: boolean,
-  isolating?: boolean,
-  toDOM?: (node: Node) => DOMOutputSpec,
-  parseDOM?: ParseRule[]
+  +selectable?: boolean,
+  +draggable?: boolean,
+  +code?: boolean,
+  +defining?: boolean,
+  +isolating?: boolean,
+  +toDOM?: ?(node: Node) => DOMOutputSpec,
+  +parseDOM?: ParseRule[]
 }>
 
 export type MarkSpec = $Subtype<{
