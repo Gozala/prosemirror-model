@@ -36,8 +36,8 @@ declare export class Node {
   textBetween(
     from: number,
     to: number,
-    blockSeparator?: string,
-    leafText?: string
+    blockSeparator?: ?string,
+    leafText?: ?string
   ): string;
 
   eq(other: Node): boolean;
